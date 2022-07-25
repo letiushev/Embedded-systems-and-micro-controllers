@@ -1,4 +1,4 @@
-The way to calculate ttc is the following:
+The way to calculate time to collision is the following:
   - We have additional variables: velocity, prevS (previous measure of distance), current (current time), prevT(previous time) and ttc (time to collision)
   - In the main loop, we set the current time = millis(). Then we calculate the velocity by negation of outputValue and prevS. The result we divide by time (current-prevT). 
   - The next step we calculate time to collision by the giving formula: −(outputValue/velocity)
